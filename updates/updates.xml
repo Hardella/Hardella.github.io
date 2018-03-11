@@ -1,0 +1,105 @@
+<!DOCTYPE products SYSTEM "updates.dtd">
+<products>
+	<product name="Hardella">
+		<code>HD</code>
+		<code></code>
+
+		<channel id="Hardella_eap" name="Hardella IDE" status="eap" url="https://hardella.com/download"
+				 feedback="https://github.com/Hardella/ide61131" majorVersion="1">
+		</channel>
+
+		<channel id="Hardella_release" name="Hardella IDE" status="release" url="https://hardella.com/download"
+				 feedback="https://github.com/Hardella/ide61131" majorVersion="1">
+			<build number="162.2070" version="1.7.2" releaseDate="20170616">
+				<message><![CDATA[
+<p>Hardella 1.7.2 is now available.</p>
+<ul>
+<li>PRU: variable initializers are not honored (previously they were just ignored)</li>
+</ul>
+<p></p>
+]]></message>
+				<button name="More Information" url="https://hardella.com/en/blog/2017/06/16/hardella-1.7.2-released/"/>
+				<button name="Download" url="https://hardella.com/download" download="true"/>
+				<patch from="162.2069" size="1"/>
+				<patch from="162.2068" size="1"/>
+				<patch from="162.2067" size="8"/>
+				<patch from="162.2066" size="9"/>
+			</build>
+			<build number="162.2069" version="1.7.1" releaseDate="20170506">
+				<message><![CDATA[
+<p>Hardella 1.7.1 is now available.</p>
+<ul>
+<li>Fixed: compilation errors when project is stored in a path with spaces</li>
+<li>Fixed: remove unused variables in generated PruMemoryTransfer program</li>
+<li>Fixed: added a compilation error when FAST_INPUTS is used in PRU1 program (only PRU0 programs can access fast inputs for now)</li>
+<li>Fixed: PRU_ABZ_ENCODER.initialOffset was renamed to positionOfLastZ</li>
+<li>Fixed: support for VAR_IN_OUT (for PRU and for CoDeSys)</li>
+<li>Fixed: PRU1 programs (init, memory read/write) will not run if PRU0 init was skipped</li>
+</ul>
+<p></p>
+]]></message>
+				<button name="More Information" url="https://hardella.com/en/blog/2017/05/06/hardella-1.7.1-released/"/>
+				<button name="Download" url="https://hardella.com/download" download="true"/>
+				<patch from="162.2068" size="1"/>
+				<patch from="162.2067" size="8"/>
+				<patch from="162.2066" size="9"/>
+			</build>
+			<build number="162.2068" version="1.7.0" releaseDate="20170320">
+				<message><![CDATA[
+<p>Hardella 1.7.0 is now available.</p>
+<ul>
+<li>Fixed: PRU-host communication (it was broken in 1.6.2)</li>
+<li>Fixed: PDM_DW output was inversed</li>
+<li>New feature: PRU cycle statistics (duration of the PRU program, and duration of PRU cycle)</li>
+<li>New feature: comments after IF, ELSIF, etc</li>
+</ul>
+<p></p>
+]]></message>
+				<button name="More Information" url="https://hardella.com/en/blog/2017/03/20/hardella-1.7.0-released/"/>
+				<button name="Download" url="https://hardella.com/download" download="true"/>
+				<patch from="162.2067" size="8"/>
+				<patch from="162.2066" size="9"/>
+			</build>
+			<build number="162.2067" version="1.6.2" releaseDate="20170124">
+				<message><![CDATA[
+<p>Hardella 1.6.2 is now available.</p>
+<ul>
+<li>Case-insensitive mode for autocomplete</li>
+<li>Removed extra braces from NOT expressions</li>
+<li>PRU: MemoryTransfer programs was split into MemoryRead and MemoryWrite</li>
+<li>PRU: pruAccessLib.lib is no longer required</li>
+</ul>
+<p></p>
+]]></message>
+				<button name="More Information" url="https://hardella.com/en/blog/2017/01/24/hardella-1.6.2-released/"/>
+				<button name="Download" url="https://hardella.com/download" download="true"/>
+				<patch from="162.2066" size="1"/>
+			</build>
+			<build number="162.2066" version="1.6.1" releaseDate="20161225">
+				<message><![CDATA[
+<p>Hardella 1.6.1 is now available.</p>
+<ul>
+<li>The code is no longer red when you replace one functional block with another (e.g. when you change TON(...) to TOF(...))</li>
+<li>Autoupdate is implemented. Updates from 1.6.1 to subsequent versions will be much simpler and it will download just modified files</li>
+</ul>
+<p></p>
+]]></message>
+				<button name="More Information" url="https://hardella.com/en/blog/2016/12/25/hardella-1.6.1-released/"/>
+				<button name="Download" url="https://hardella.com/download" download="true"/>
+			</build>
+			<build number="162.2065" version="1.6.0" releaseDate="20161219">
+				<message><![CDATA[
+<p>Hardella 1.6.0 is now available.</p>
+<ul>
+<li>Programming of both PRU is supported. You can now have a full control of 4 fast outputs and 2 fast inputs</li>
+<li>The standard library is extended. Several blocks were included: step motor control, encoder, and several others</li>
+<li>Block and variable comments are now visible in the autocomplete menu</li>
+</ul>
+<p></p>
+]]></message>
+				<button name="More Information" url="http://hardella.com/blog/2016/12/19/hardella-1.6.0-released/"/>
+				<button name="Download" url="https://hardella.com/download" download="true"/>
+			</build>
+		</channel>
+	</product>
+</products>

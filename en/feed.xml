@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://hardella.github.io/en/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hardella.github.io/en/" rel="alternate" type="text/html" /><updated>2018-03-11T15:42:36+03:00</updated><id>https://hardella.github.io/</id><title type="html">Hardella IDE</title><subtitle>Hardella is an IDE for PLC programming. It focuses on developer productivity and on the fly error checking.
+</subtitle><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><entry xml:lang="en"><title type="html">Hardella 1.7.2 released</title><link href="https://hardella.github.io/en/blog/2017/06/16/hardella-1.7.2-released/" rel="alternate" type="text/html" title="Hardella 1.7.2 released" /><published>2017-06-16T23:00:00+03:00</published><updated>2017-06-16T23:00:00+03:00</updated><id>https://hardella.github.io/blog/2017/06/16/hardella-1.7.2-released.en</id><content type="html" xml:base="https://hardella.github.io/blog/2017/06/16/hardella-1.7.2-released/">&lt;p&gt;Hardella 1.7.2 is avaliable for &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fixed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PRU: variable initializers are not honored (previously they were just ignored)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><summary type="html">Hardella 1.7.2 is avaliable for download.</summary></entry><entry xml:lang="en"><title type="html">Hardella 1.7.1 released</title><link href="https://hardella.github.io/en/blog/2017/05/06/hardella-1.7.1-released/" rel="alternate" type="text/html" title="Hardella 1.7.1 released" /><published>2017-05-06T23:00:00+03:00</published><updated>2017-05-06T23:00:00+03:00</updated><id>https://hardella.github.io/blog/2017/05/06/hardella-1.7.1-released.en</id><content type="html" xml:base="https://hardella.github.io/blog/2017/05/06/hardella-1.7.1-released/">&lt;p&gt;Hardella 1.7.1 is avaliable for &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fixed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Compilation errors when project is stored in a path with spaces&lt;/li&gt;
+  &lt;li&gt;Remove unused variables in generated PruMemoryTransfer program&lt;/li&gt;
+  &lt;li&gt;Added a compilation error when FAST_INPUTS is used in PRU1 program (only PRU0 programs can access fast inputs for now)&lt;/li&gt;
+  &lt;li&gt;PRU_ABZ_ENCODER.initialOffset was renamed to positionOfLastZ&lt;/li&gt;
+  &lt;li&gt;Support for VAR_IN_OUT (for PRU and for CoDeSys)&lt;/li&gt;
+  &lt;li&gt;PRU1 programs (init, memory read/write) will not run if PRU0 init was skipped&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><summary type="html">Hardella 1.7.1 is avaliable for download.</summary></entry><entry xml:lang="en"><title type="html">Hardella 1.7.0 released</title><link href="https://hardella.github.io/en/blog/2017/03/20/hardella-1.7.0-released/" rel="alternate" type="text/html" title="Hardella 1.7.0 released" /><published>2017-03-20T14:00:00+03:00</published><updated>2017-03-20T14:00:00+03:00</updated><id>https://hardella.github.io/blog/2017/03/20/hardella-1.7.0-released.en</id><content type="html" xml:base="https://hardella.github.io/blog/2017/03/20/hardella-1.7.0-released/">&lt;p&gt;Hardella 1.7.0 is avaliable for &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fixed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;PRU - host data exchange is now great again (it has been broken since 1.6.2)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PDM_DW&lt;/code&gt; block was returning inverted values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;New features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You can fetch actual PRU cycle duration in the online mode. When the feature is enabled in the PRU configuration, a couple of new output variables is added to &lt;code class=&quot;highlighter-rouge&quot;&gt;MemoryRead&lt;/code&gt;. The variables denote “maximum duration of a PRU program”, and “maximum duration of a PRU cycle”. PRU core collects the statistics as it runs, and it resets the counters on each read from PRU operation.&lt;/li&gt;
+  &lt;li&gt;Comments can now be added after semicolons, after &lt;code class=&quot;highlighter-rouge&quot;&gt;IF&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ELSIF&lt;/code&gt;, and so on.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;As you open a project that was created in a previous version, “Migration Assistant” would suggest to update the project. This is required to update project to new comment storage format. You just need to click next, next, etc.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><summary type="html">Hardella 1.7.0 is avaliable for download.</summary></entry><entry xml:lang="en"><title type="html">Hardella 1.6.2 released</title><link href="https://hardella.github.io/en/blog/2017/01/24/hardella-1.6.2-released/" rel="alternate" type="text/html" title="Hardella 1.6.2 released" /><published>2017-01-24T18:00:00+03:00</published><updated>2017-01-24T18:00:00+03:00</updated><id>https://hardella.github.io/blog/2017/01/24/hardella-1.6.2-released.en</id><content type="html" xml:base="https://hardella.github.io/blog/2017/01/24/hardella-1.6.2-released/">&lt;p&gt;Hardella 1.6.2 is avaliable for &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fixed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Removed extra parenthesis after &lt;code class=&quot;highlighter-rouge&quot;&gt;NOT&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pruAccessLib.lib&lt;/code&gt; became optional (it was used to detect online mode)&lt;/li&gt;
+  &lt;li&gt;CoDeSys: support PLC100 targets in demo project (demo project did not workd since Hardella was unable to locate discrete output)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;New features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Case-insensitive autocomplete for type and variable names. For example, it replaces &lt;code class=&quot;highlighter-rouge&quot;&gt;bool&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;BOOL&lt;/code&gt; as you type&lt;/li&gt;
+  &lt;li&gt;PRU: data exchange was improved so you can use separate &lt;code class=&quot;highlighter-rouge&quot;&gt;MemoryRead&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;MemoryWrite&lt;/code&gt; programs instead of old &lt;code class=&quot;highlighter-rouge&quot;&gt;MemoryTransfer&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;MemoryTransfer&lt;/code&gt; is kept for backward compatibility reasons, however it is deprecated.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><summary type="html">Hardella 1.6.2 is avaliable for download.</summary></entry><entry xml:lang="en"><title type="html">Hardella 1.6.1 released</title><link href="https://hardella.github.io/en/blog/2016/12/25/hardella-1.6.1-released/" rel="alternate" type="text/html" title="Hardella 1.6.1 released" /><published>2016-12-25T20:50:00+03:00</published><updated>2016-12-25T20:50:00+03:00</updated><id>https://hardella.github.io/blog/2016/12/25/hardella-1.6.1-released.en</id><content type="html" xml:base="https://hardella.github.io/blog/2016/12/25/hardella-1.6.1-released/">&lt;p&gt;Hardella 1.6.1 is avaliable for &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Fixed:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The code is no longer red when you replace one functional block with another (e.g. when you change &lt;code class=&quot;highlighter-rouge&quot;&gt;TON(...)&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;TOF(...)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;New features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Autoupdate is implemented. Updates from 1.6.1 to subsequent versions will be much simpler and it will download just modified files.
+For instance, update 1.6.0..1.6.1 would have downloaded just 150 KiB.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><summary type="html">Hardella 1.6.1 is avaliable for download. Fixed: The code is no longer red when you replace one functional block with another (e.g. when you change TON(...) to TOF(...))</summary></entry><entry xml:lang="en"><title type="html">Hardella 1.6.0 released</title><link href="https://hardella.github.io/en/blog/2016/12/19/hardella-1.6.0-released/" rel="alternate" type="text/html" title="Hardella 1.6.0 released" /><published>2016-12-19T17:17:34+03:00</published><updated>2016-12-19T17:17:34+03:00</updated><id>https://hardella.github.io/blog/2016/12/19/hardella-1.6.0-released.en</id><content type="html" xml:base="https://hardella.github.io/blog/2016/12/19/hardella-1.6.0-released/">&lt;p&gt;Hardella 1.6.0 is avaliable for &lt;a href=&quot;/download/&quot;&gt;download&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;New features:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Programming of both PRU is supported. You can now have a full control of 4 fast outputs and 2 fast inputs&lt;/li&gt;
+  &lt;li&gt;The standard library is extended. Several blocks were included: &lt;a href=&quot;/docs/pru/examples/step-motor/&quot;&gt;step motor control&lt;/a&gt;, &lt;a href=&quot;/docs/pru/examples/fast-encoder/&quot;&gt;encoder&lt;/a&gt;, and several others&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;EXIT&lt;/code&gt; statement is implemented&lt;/p&gt;
+
+    &lt;p&gt;&lt;img width=&quot;202&quot; alt=&quot;EXIT statement&quot; src=&quot;https://hardella.github.io/assets/images/docs/ide/exit-statement.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Block and variable comments are now visible in the autocomplete menu&lt;/p&gt;
+
+    &lt;p&gt;&lt;img width=&quot;704&quot; alt=&quot;Comments in autocomplete menu&quot; src=&quot;https://hardella.github.io/assets/images/docs/ide/autocomplete-comments.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;github&quot;=&gt;&quot;Hardella&quot;}</name></author><summary type="html">Hardella 1.6.0 is avaliable for download. New features: Programming of both PRU is supported. You can now have a full control of 4 fast outputs and 2 fast inputs The standard library is extended. Several blocks were included: step motor control, encoder, and several others EXIT statement is implemented</summary></entry></feed>
